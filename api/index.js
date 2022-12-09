@@ -12,7 +12,9 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 
 
-app.use(cors());
+app.use(cors({
+    origin: "https://lookist.vercel.app/",
+}));
 dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
