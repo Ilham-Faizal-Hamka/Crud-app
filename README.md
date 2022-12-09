@@ -33,8 +33,7 @@ Install required dependencies:<br/>
 https://www.figma.com/file/qitM89kbxoGDCTVs3rcTF9/DESKTOP?node-id=0%3A1&t=MvJ0qaiYBGZZaaki-0
 
 ## Folder Structure 
-<br/>
-```
+````
 .
 └── Crud-app/
      ├── api/
@@ -62,7 +61,7 @@ https://www.figma.com/file/qitM89kbxoGDCTVs3rcTF9/DESKTOP?node-id=0%3A1&t=MvJ0qa
          ├── postcss.config.js
          ├── tailwind.config.js
          └── vercel.json
-```
+````
 
 ## 🔗 Tautan Tugas Akhir
 - [PPT BackEnd](https://www.canva.com/design/DAFNBjqgDBE/pHAAez87QBJuIuro2xXVig/edit?utm_content=DAFNBjqgDBE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
