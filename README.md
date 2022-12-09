@@ -13,25 +13,25 @@ Tim kami terdiri dari <br>
 ## Prerequisite
 Download and install Node.js LTS version 18.12.1
 <br>
-## Setting up project 
-Install required dependencies:
+## Setting up project
+Install required dependencies:<br>
 '''
  npm install
 '''
 <br>
-Run the program
-### Client :
+## Run the program<br>
+### Client : <br>
 '''
     cd client 
     npm start
 '''
-### Api 
+### Api <br>
 '''
     cd api
     npm start
 '''
 <br>
-## Design 
+## Design <br>
 https://www.figma.com/file/qitM89kbxoGDCTVs3rcTF9/DESKTOP?node-id=0%3A1&t=MvJ0qaiYBGZZaaki-0
 <br>
-## Folder Structure
+## Folder Structure <br>
