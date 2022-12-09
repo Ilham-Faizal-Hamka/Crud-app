@@ -13,8 +13,14 @@ const categoryRoute = require("./routes/categories");
 
 
 app.use(cors({
-    origin: "https://lookist.vercel.app",
+    origin: "*",
 }));
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
 dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
