@@ -1,22 +1,34 @@
-import React from 'react';
-// import { Link } from "react-router-dom";
-// import "./Sidebar.css";
-import Image from "../../assets/profpic.jpeg";
+import Ibnu from "../../assets/ibnu.png"
 
 
 export default function Sidebar() {
   return (
-    <div className="absolute right-0 place-items-end mt-11 lex flex-col min-h-full p-[10px] w-[338px] h-80 mr-11 overflow-y-auto overflow-x-hidden bg-biru-abu rounded-3xl">
-      <div className="flex flex-col items-center">
-        <span className="sidebarTitle m-5  left-[1154px] top-[200px] text-center font-playfair font-normal text-judul2 text-white">ABOUT ME</span>
+    <div className="sidebar m-5 p-7 bg-abu-abu rounded-lg flex flex-col items-center h-[700px]">
+      <div className="flex flex-col items-start">
+        <span className="my-2 mx-auto p-1 w-4/5 border-y-white border-y-2 text-md text-white font-semibold leading-5 text-center items-center">Contact Us</span>
         <img
-          src={Image}
-          alt="" class="w-[225px] h-[225px] left-[1085px] top-[234px] my-0 rounded-3xl object-cover"
+          src={Ibnu}
+          alt="" className="mt-4 mx-auto"
         />
-        <p className="p-6 text-center h-[153px] left-[1095px] top-[524px] font-playfair font-normal text-teks1 text-white">
-          Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-          amet ex esse.Sunt eu ut nostrud id quis proident.
+        <p className="px-2 mt-3 font-semibold items-start">
+          Want help?
         </p>
+        <p className="px-2 items-start">
+          We have friendly customer service resp on staff who are ready to help.
+        </p>
+        <a href="mailto: lookist2022@gmail.com" className="flex space-x-2 mt-4 px-2 items-start">
+          <i className="pt-1 fa-solid fa-envelope"></i>
+          <p className="px-2">
+            lookist2022@gmail.com
+          </p>
+        </a>
+        <p className="px-2 mt-4 font-semibold items-start">
+          Openration Hours :
+        </p>
+        <p className="px-2 items-start">
+          9am-6pm WIB
+        </p>
+
       </div>
     </div>
   );

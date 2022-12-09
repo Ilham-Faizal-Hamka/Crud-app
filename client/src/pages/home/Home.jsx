@@ -1,31 +1,32 @@
-import React, { useEffect, useState } from 'react'
-import Header from "../../components/header/Header"
-import NavBar from '../../components/navbar/NavBar';
-import Posts from '../../components/posts/Posts';
-import Sidebar from '../../components/sidebar/Sidebar';
-import Write from '../write/Write';
-import axios from "axios"
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
+import Header from "../../components/header/Header";
+import Posts from "../../components/posts/Posts";
+import Sidebar from "../../components/sidebar/Sidebar";
+import NavBar from "../../components/navbar/NavBar";
+
+
 
 export default function Home() {
-    // const [posts,setPosts]= useState([]);
-    // useEffect(()=>{
-    //     const fetchPosts = async ()=>{
-    //         const res = await axios.get("/posts" + search);
-    //         setPosts(res.data);
-    //     };
-    //     fetchPosts();
-    // },[search])
+  const [posts, setPosts] = useState([]);
+  const { search } = useLocation();
 
-    return (
-        <>
-            <div>
-                <Header />
-                {/* <div className="home">
-                <Posts posts={posts}/>
-                <Sidebar/> */}
-                {/* </div> */}
-            </div>
-        </>
-    )
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await axios.get("https://lookist-api.vercel.app/api/posts" + search);
+      setPosts(res.data);
+    };
+    fetchPosts();
+  }, [search]);
+  return (
+    <>
+      <NavBar />
+      <Header />
+      <div className="flex mx-10">
+        <Posts posts={posts} />
+        <Sidebar />
+      </div>
+    </>
+  );
 }
