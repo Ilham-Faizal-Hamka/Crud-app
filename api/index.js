@@ -13,7 +13,7 @@ const categoryRoute = require("./routes/categories");
 
 
 app.use(cors({
-    origin: "https://lookist.vercel.app/",
+    origin: "https://lookist.vercel.app",
 }));
 dotenv.config();
 app.use(express.json());
